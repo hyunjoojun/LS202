@@ -1,0 +1,17 @@
+body {
+  font-size: 28px;
+  width: 670px;
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font: 'Franklin Gothic Medium';
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0 10px;
+}
