@@ -1,9 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-size: 28px;
   width: 680px;
   border: 2px solid black;
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -13,19 +20,21 @@ h1 {
 }
 
 p {
-  margin: 0 100px 0 15px;
+  margin: 0 0 0 15px;
   padding: 1px;
 }
 
 div {
-  border-bottom: 18px solid black;
+  border-bottom: 15px solid black;
   margin: 0 15px;
   padding: 5px 5px;
 }
 
 div p {
-  display: inline;
-  margin-right: 80px;
+  display: inline-block;
+  margin-right: 103px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 h2 {
@@ -41,5 +50,50 @@ tbody td:nth-child(2n+2) {
 }
 
 table {
-  width: 100%;
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 15px;
+  padding: 5px 5px;
+}
+
+th {
+  text-align: right;
+  border-bottom: 1px solid black;
+  padding: 8px 0 0 0;
+}
+
+.main tr {
+  border-bottom: 1px solid black;
+}
+
+#protein {
+  border-bottom: 20px solid black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indent {
+  display: block;
+  margin-left: 30px;
+}
+
+#note {
+  font-size: 1.5rem;
+  margin: 15px;
+  text-align: left;
+}
+
+.side-table {
+  font-size: 1.4rem;
+}
+
+.side-table th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.side-table tbody td:nth-child(2n+2) {
+  text-align: left;
 }
