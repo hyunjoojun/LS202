@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Exercise</title>
+    <meta charset="utf-8">
+    <style>
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="first-name">First Name</label></dt>
+          <dd><input type="text" name="first-name" id="first-name" required></dd>
+
+
+          <dt><label for="last-name">Last Name</label></dt>
+          <dd><input type="text" name="last-name" id="last-name" required></dd>
+
+          <dt><label for="email">E-mail Address</label></dt>
+          <dd>
+            <input type="email" name="email" id="email" autocomplete="off"
+                  autocorrect="off" autocapitalize="none" required>
+          </dd>
+
+          <dt><label for="phone">Phone Number</label></dt>
+          <dd>
+            <select name="phone-type" id="phone-type">
+              <option value="home" selected>Home</option>
+              <option value="business"">Business</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+          <dd>
+            <input type="tel" name="phone" id="phone" placeholder="###-###-####"
+                   required>
+          </dd>
+        </dl>
+
+        <dt><label for="message">Message Box</label></dt>
+        <dd>
+          <textarea id="message" name="message" rows="6" cols="80"
+                    placeholder="Type your message here."></textarea>
+        </dd>
+
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+
+    <form action="#" method="get">
+      <fieldset>
+        <label>
+          Search for
+          <input type="search" name="query" id="query">
+        </label>
+
+        <label>
+          <input type="radio" name="filter" value="tv" required>
+          TV
+        </label>
+
+        <label>
+          <input type="radio" name="filter" value="movies" required>
+          Movies
+        </label>
+
+        <label>
+          <input type="radio" name="filter" value="music" required>
+          Music
+        </label>
+
+        <button name="search">Search</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
