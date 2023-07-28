@@ -9,12 +9,12 @@ fieldset {
   border: none;
 }
 
-dt {
-  margin-bottom: 5px;
+dd {
+  margin: 0 0 10px 0;
 }
 
-dd {
-  margin: 0 0 25px 0;
+p {
+  margin: 0;
 }
 
 input[type="text"],
@@ -33,6 +33,10 @@ textarea {
   resize: vertical;
 }
 
+li {
+  padding-bottom: 3px;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -41,4 +45,43 @@ ul {
 
 select {
   margin: 0 0 25px 0;
+}
+
+.partial {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.one_half {
+  width: 50%;
+}
+
+.left {
+  padding-right: 5px;
+}
+
+.right {
+  padding-right: 5px;
+}
+
+.both {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.ten {
+  width: 10%;
+}
+
+.fourty {
+  width: 40%;
+}
+
+dl {
+  margin-bottom: 0;
+}
+
+dl + dl {
+  margin-top: 0;
 }
